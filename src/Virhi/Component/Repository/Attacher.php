@@ -13,7 +13,7 @@ class Attacher extends Repository implements AttacherInterface
 {
     public function attach($entity)
     {
-        // TODO: Implement attach() method.
+        $this->entiteManager->persist($entity);
+        $this->entiteManager->flush();
     }
-
 } 
