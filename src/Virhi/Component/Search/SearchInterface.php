@@ -26,4 +26,6 @@ interface SearchInterface
      * @return CollectionInterface
      */
     public function getFilters();
+
+    public function  getHydratation();
 } 

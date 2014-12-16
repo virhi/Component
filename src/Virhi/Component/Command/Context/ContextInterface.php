@@ -8,7 +8,9 @@
 
 namespace Virhi\Component\Command\Context;
 
-interface ContextInterface
+use Virhi\Component\Context\ContextInterface as BaseInterface;
+
+interface ContextInterface extends BaseInterface
 {
 
 } 

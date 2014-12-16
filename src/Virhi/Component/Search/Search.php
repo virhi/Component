@@ -10,6 +10,7 @@ namespace Virhi\Component\Search;
 
 
 use Virhi\Component\Collection\CollectionInterface;
+use Doctrine\ORM\AbstractQuery;
 
 class Search implements SearchInterface
 {
@@ -27,6 +28,14 @@ class Search implements SearchInterface
      * @var CollectionInterface
      */
     protected $filters;
+
+    protected $hydratation;
+
+    function __construct()
+    {
+        $this->hydratation = AbstractQuery::HYDRATE_ARRAY;
+    }
+
 
     public function addFilter($filter)
     {
@@ -67,4 +76,22 @@ class Search implements SearchInterface
     {
         return $this->orders;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getHydratation()
+    {
+        return $this->hydratation;
+    }
+
+    /**
+     * @param mixed $hydratation
+     */
+    public function setHydratation($hydratation)
+    {
+        $this->hydratation = $hydratation;
+    }
+
+
 }
