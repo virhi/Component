@@ -36,7 +36,6 @@ class Search implements SearchInterface
         $this->hydratation = AbstractQuery::HYDRATE_ARRAY;
     }
 
-
     public function addFilter($filter)
     {
         $this->getFilters()->getList()->append($filter);
