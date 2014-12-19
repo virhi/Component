@@ -19,7 +19,6 @@ class AttacherTest extends \PHPUnit_Framework_TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-
         $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManagerInterface')
             ->disableOriginalConstructor()
             ->setMethods(array('persist', 'flush'))
