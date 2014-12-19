@@ -10,9 +10,18 @@
             "role": "Developer"
         }
     ],
+
     "autoload": {
-        "psr-0": {
-            "Virhi\\Component": "src/"
+        "psr-4": {
+            "Virhi\\Component\\": "src/Virhi/Component/"
         }
+    },
+
+    "autoload-dev": {
+        "psr-4": { "Virhi\\Component\\Tests\\": "Tests/" }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
     }
 }

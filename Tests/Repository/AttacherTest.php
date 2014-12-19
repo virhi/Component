@@ -15,12 +15,12 @@ class AttacherTest extends \PHPUnit_Framework_TestCase
     public function testAttach()
     {
 
-        $doctrine = $this->getMockBuilder('\Doctrine\Bundle\DoctrineBundle\Registry')
+        $doctrine = $this->getMockBuilder('\Symfony\Bridge\Doctrine\RegistryInterface')
             ->disableOriginalConstructor()
             ->getMock();
 
 
-        $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManager')
+        $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManagerInterface')
             ->disableOriginalConstructor()
             ->setMethods(array('persist', 'flush'))
             ->getMock();
