@@ -21,6 +21,11 @@
         "psr-4": { "Virhi\\Component\\Tests\\": "Tests/" }
     },
 
+    "require": {
+        "symfony/symfony": "2.3.*",
+        "doctrine/orm": "~2.2,>=2.2.3"
+    },
+
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
     }
