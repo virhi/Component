@@ -9,6 +9,7 @@
 namespace Virhi\Component\Search;
 
 
+use Virhi\Component\Collection\Collection;
 use Virhi\Component\Collection\CollectionInterface;
 use Doctrine\ORM\AbstractQuery;
 
@@ -34,6 +35,7 @@ class Search implements SearchInterface
     function __construct()
     {
         $this->hydratation = AbstractQuery::HYDRATE_ARRAY;
+        $this->limits = new Collection();
     }
 
     public function addFilter($filter)

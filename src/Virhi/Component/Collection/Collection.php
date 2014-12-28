@@ -13,6 +13,7 @@ class Collection implements CollectionInterface
 {
     protected $list;
 
+
     function __construct(array $list = array())
     {
         $this->list = new \ArrayObject($list);
@@ -26,4 +27,4 @@ class Collection implements CollectionInterface
         return $this->list;
     }
 
-} 
+}
