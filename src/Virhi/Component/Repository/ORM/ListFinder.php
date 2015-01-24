@@ -3,14 +3,15 @@
  * Created by PhpStorm.
  * User: virhi
  * Date: 07/10/2014
- * Time: 15:49
+ * Time: 15:48
  */
 
-namespace Virhi\Component\Repository;
+namespace Virhi\Component\Repository\ORM;
 
+use Virhi\Component\Repository\ListFinderInterface;
 use Virhi\Component\Search\SearchInterface;
 
-class Finder extends Repository implements FinderInterface
+class ListFinder extends Repository implements ListFinderInterface
 {
     /**
      * @param SearchInterface $search

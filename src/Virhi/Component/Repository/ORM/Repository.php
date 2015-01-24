@@ -6,7 +6,7 @@
  * Time: 15:41
  */
 
-namespace Virhi\Component\Repository;
+namespace Virhi\Component\Repository\ORM;
 
 
 use Doctrine\ORM\EntityManagerInterface;

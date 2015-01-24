@@ -6,8 +6,10 @@
  * Time: 19:17
  */
 
-namespace Virhi\Component\Repository;
+namespace Virhi\Component\Repository\ORM;
 
+
+use Virhi\Component\Repository\RemoverInterface;
 
 class Remover extends Repository implements RemoverInterface
 {

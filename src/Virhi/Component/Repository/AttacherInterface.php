@@ -9,7 +9,7 @@
 namespace Virhi\Component\Repository;
 
 
-interface AttacherInterface extends RepositoryInterface
+interface AttacherInterface
 {
     public function attach($entity);
 } 
