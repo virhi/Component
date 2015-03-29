@@ -6,7 +6,7 @@
  * Time: 15:09
  */
 
-namespace Virhi\Component\Repository;
+namespace Virhi\Component\Repository\ORM;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bridge\Doctrine\RegistryInterface;

@@ -10,7 +10,7 @@ namespace Virhi\Component\Repository;
 
 
 
-interface RemoverInterface extends RepositoryInterface
+interface RemoverInterface
 {
     public function remove($entity);
 }

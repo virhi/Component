@@ -10,7 +10,7 @@ namespace Virhi\Component\Repository;
 
 use Virhi\Component\Search\SearchInterface;
 
-interface ListFinderInterface extends RepositoryInterface
+interface ListFinderInterface
 {
     /**
      * @param SearchInterface $search

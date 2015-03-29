@@ -6,7 +6,8 @@
  * Time: 15:45
  */
 
-namespace Virhi\Component\Repository;
+namespace Virhi\Component\Repository\ORM;
+use Virhi\Component\Repository\AttacherInterface;
 
 
 class Attacher extends Repository implements AttacherInterface
