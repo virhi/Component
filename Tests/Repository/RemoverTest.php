@@ -8,7 +8,7 @@
 
 namespace Virhi\Component\Tests\Repository;
 
-use Virhi\Component\Repository\Remover;
+use Virhi\Component\Repository\ORM\Remover;
 
 class RemoverTest extends \PHPUnit_Framework_TestCase
 {
@@ -18,7 +18,7 @@ class RemoverTest extends \PHPUnit_Framework_TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManagerInterface')
+        $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManager')
             ->disableOriginalConstructor()
             ->setMethods(array('remove', 'flush'))
             ->getMock();

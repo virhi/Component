@@ -8,7 +8,7 @@
 
 namespace Virhi\Component\Tests\Repository;
 
-use Virhi\Component\Repository\Attacher;
+use Virhi\Component\Repository\ORM\Attacher;
 
 class AttacherTest extends \PHPUnit_Framework_TestCase
 {
@@ -19,7 +19,7 @@ class AttacherTest extends \PHPUnit_Framework_TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManagerInterface')
+        $entityManager = $this->getMockBuilder('\Doctrine\ORM\EntityManager')
             ->disableOriginalConstructor()
             ->setMethods(array('persist', 'flush'))
             ->getMock();
@@ -33,6 +33,8 @@ class AttacherTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue(null));
 
         $attacher = new Attacher($doctrine, $entityManager);
+
         $attacher->attach('toto');
+
     }
 } 
