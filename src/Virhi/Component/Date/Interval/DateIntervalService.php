@@ -14,7 +14,7 @@ trait DateIntervalService
     /**
      * @return bool
      */
-    public function dateIntervalisNull(DateInterval $dateInterval)
+    public static function dateIntervalisNull(DateInterval $dateInterval)
     {
         $result = false;
         $nb = $dateInterval->d + $dateInterval->i + $dateInterval->h + $dateInterval->m + $dateInterval->s + $dateInterval->y;
